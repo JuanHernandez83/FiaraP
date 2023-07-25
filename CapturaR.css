@@ -1,0 +1,303 @@
+/*Cuerpo del proyecto*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Technovier;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+body {
+  background-image: url("img/alex-suprun-AHnhdjyTNGM-unsplash 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Fin del cuerpo del proyecto*/
+
+/*Header*/
+
+.header {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+  margin-top: 0px;
+  background-color: rgb(0, 0, 0);
+}
+
+.header .logo {
+  cursor: pointer;
+}
+
+.header .logo img {
+  width: 185px;
+  height: auto;
+  transition: all 1.3s;
+}
+
+.header .logo img:hover {
+  transform: scale(1.2);
+}
+
+.header .nav-links {
+  list-style: none;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links a {
+  font-size: 700;
+  color: red;
+}
+
+.header .nav-links li:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links li a:hover {
+  color: black;
+}
+
+.header .btn button,
+.header .menu button {
+  font-weight: 700;
+  color: #32402c;
+  padding: 9px 25px;
+  background: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  font-size: 38px;
+}
+
+.header .btn button:hover,
+.header .menu button:hover {
+  background-color: white;
+  color: rgb(255, 0, 0);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+  .nav-links,
+  btn {
+    display: none;
+  }
+
+  .menu {
+    display: inherit;
+  }
+}
+
+/*Fin del header*/
+
+/*Container*/
+
+#ordenes:hover {
+  color: red;
+}
+
+#txt-R {
+  padding-top: 50px;
+  color: white;
+}
+
+#txt-R:hover {
+  text-shadow: 0 5px 10px;
+  color: red;
+}
+
+.container {
+  background: white;
+  padding: 15px 9%;
+  border-radius: 8px;
+  margin-top: 50px;
+  width: 500px;
+  height: 500px;
+  padding-top: 30px;
+  padding-bottom: 200px;
+}
+
+.txt-E{
+    color: #32402c;
+    text-shadow: 0 5px 10px;
+}
+
+.txt-E:hover{
+    color: red;
+}
+
+
+
+.cuadro-txt {
+  border-radius: 8px;
+  border-color: black;
+  background-color: rgb(193, 193, 193);
+  height: 40px;
+  padding-left: 20px;
+}
+
+.cuadro-txt:hover {
+  transform: scale(1.2);
+}
+
+#boton1 {
+  content: "";
+  width: 240.5px;
+  height: 50px;
+  left: 0;
+  top: 0;
+  border: 3px solid red;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  font-family: Technovier;
+  font-size: 20px;
+  transition: 0.4s cubic-bezier(0.62, 1.43, 0.44, -1.32);
+  margin-right: 70px;
+}
+
+#boton1:hover {
+  box-shadow: 0 0 10px red, 0 0 30px red, 0 0 70px red, 0 0 130px red;
+  transform: scale(1.2);
+}
+
+form fieldset {
+  float: left;
+  width: 48%;
+}
+
+/*Fin  del container*/
+
+/*Footer*/
+
+#footer{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  #p-footer{
+    background: black;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .titulo-footer{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+  }
+  
+  .span-subtitulo{
+    color: rgb(255, 0, 0);
+    font-weight: 500;
+  }
+  
+  .contacto{
+    color: rgb(61, 53, 53);
+    font-size: 20px;
+    margin-top: 35px;
+    font-weight: 800;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
+  .titulo-contacto{
+    color: rgb(61, 53, 53);  
+    margin-left: 20px;
+    text-decoration: none;
+  
+  }
+  
+  .localizacion{
+    color: yellow;
+    font-size: 25px;
+    
+  }
+  
+  .titulo-ubicacion{
+    color: red;
+    margin-left: 25px;
+  }
+  
+  .boton-siguenos{
+    background: yellow;
+    width: 50%;
+    height: 45px;
+    margin: 0 auto;
+  }
+  
+  .siguenos{
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 25px;
+    font-weight: 800;
+  }
+  
+  #fondo-footer{
+    background: #000000;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .ubicacion{
+  margin-left: 20px;
+  color: rgb(61, 53, 53);
+  text-decoration: none;
+  }
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.button-container input{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.custom-file-input {
+    width: 200px;
+    height: 200px;
+    border: 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(193, 193, 193);
+    border-radius: 8px;
+    height: 150px;
+    width: 350px;
+    margin-bottom:19px;
+}
+
+.custom-file-input i {
+    font-size: 60px;
+    color: black;
+}
+
+.custom-file-input input[type="file"] {
+    display: none;
+}
+
+
+/*Fin del footer*/
